@@ -9,8 +9,8 @@
     <title>Upload File Form</title>
 </head>
 <body>
-    <form action="obrada.php" method="post" enctype="multipart/form-data">
-        Odaberite datoteku za upload:
+    <form action="obrada.php" method="post" enctype=.................multipart/form-data">
+        
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload" name="submit">
     </form>
@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-    // Check if the file is uploaded
+    
     if ($_FILES["fileToUpload"]["size"] == 0) {
         echo "Niste odabrali datoteku za upload.";
         $uploadOk = 0;
@@ -67,7 +67,7 @@ tecajnica.php
 </head>
 <body>
     <form action="" method="post">
-        Unesite iznos u EUR:
+        .......iznos u EUR:
         <input type="number" name="eur" step="0.01" min="0" required>
         <input type="submit" value="Konvertiraj">
     </form>
